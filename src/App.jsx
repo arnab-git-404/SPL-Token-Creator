@@ -22,8 +22,9 @@ import Layout from './components/Layout/Layout';
 import WalletConnection from './pages/WalletConnection';
 import { ToastContainer } from 'react-toastify';
 import {TokenProvider} from './context/TokenContext';
+import { Buffer } from 'buffer';
 
-
+window.Buffer = Buffer;
 
 function App() {
 

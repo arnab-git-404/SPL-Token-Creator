@@ -226,20 +226,31 @@ const MintTokenForm = ({ onSuccess, initialTokenMint }) => {
         )}
         
         <button 
-          type="submit" 
-          disabled={isLoading || !publicKey}
-          className={`h-12 w-full px-4 rounded-md hover:cursor-pointer flex items-center justify-center ${
-            isLoading || !publicKey ? 'bg-gray-400' : 'bg-indigo-600 hover:bg-indigo-700'
-          } text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
-        >
-          {isLoading ? (
-            <Loader size="small" className="text-white" />
-          ) : (
-            <span className="flex items-center">
-              <FiDollarSign className="mr-2" /> Mint Tokens
-            </span>
-          )}
-        </button>
+  type="submit" 
+  disabled={isLoading || !publicKey || hasAuthority === false}
+  className={`h-12 w-full px-4 rounded-md hover:cursor-pointer flex items-center justify-center 
+    ${isLoading || !publicKey ? 'bg-gray-400' : 'bg-indigo-600 hover:bg-indigo-700'}
+    text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+    ${isLoading ? 'animate-pulse' : ''}
+    transform hover:-translate-y-0.5 active:translate-y-0 hover:shadow-md transition-all duration-150`}
+>
+  {isLoading ? (
+    <span className="flex items-center justify-center">
+      <svg className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Processing...
+    </span>
+  ) : (
+    <span className="flex items-center">
+      <FiDollarSign className="mr-2" /> Mint Tokens
+    </span>
+  )}
+</button>
+
+
+
       </form>
 
       <div className="mt-6 bg-indigo-50 p-4 rounded-md border border-indigo-200">
@@ -252,7 +263,7 @@ const MintTokenForm = ({ onSuccess, initialTokenMint }) => {
 
 
       {fetchingTokens ? (
-        <div className="mt-6">
+        <div className="mt-6 text-gray-800 ">
           <Loader size="small" message="Fetching your tokens..." />
         </div>
       ) : userTokens.length > 0 ? (

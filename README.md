@@ -29,7 +29,7 @@ Solana Token Creator is a web application that allows users to easily create, mi
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/solana-token-creator.git
+   git clone https://github.com/arnab-git-404/SPL-Token-Creator.git
    cd solana-token-creator
    ```
 

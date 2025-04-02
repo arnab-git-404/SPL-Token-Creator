@@ -57,7 +57,7 @@ function App() {
                 <Route path="/mint-token" element={<MintToken />} />
                 <Route path="/send-token" element={<SendToken />} />
                 <Route path="/transactions" element={<TransactionHistory />} />
-
+                <Route path="*" element={<Home />} />
 
               </Routes>
             </Layout>

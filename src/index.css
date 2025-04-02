@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+
+:root{
+    --solana-purple: #9945FF;
+    --solana-green: #14F195;
+    --solana-blue: #00C2FF;
+    --solana-dark: #1E1E1E;
+   
+    --solana-orange: #FF9900;
+    --solana-gray: #F5F5F5;
+    --solana-white: #FFFFFF;
+    --solana-black: #000000;
+    --solana-teal: #008080;
+    --solana-pink: #FF69B4;
+    --solana-red: #FF4C00;
+    --solana-yellow: #FFC700;
+}
+
+
+
+  /* @utility btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: ButtonFace;
+  }
+
+    @utility btn-primary {
+        background-color: var(--solana-blue);
+        color: var(--solana-white);
+    }
+
+    @utility btn-secondary {
+        background-color: var(--solana-gray);
+        color: var(--solana-black);
+    }
+
+    @utility btn-danger {
+        background-color: var(--solana-red);
+        color: var(--solana-white);
+    }
+
+    @utility btn-success {
+        background-color: var(--solana-green);
+        color: var(--solana-white);
+    } */
+
+
+

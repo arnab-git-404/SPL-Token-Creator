@@ -23,6 +23,7 @@ import WalletConnection from './pages/WalletConnection';
 import { ToastContainer } from 'react-toastify';
 import {TokenProvider} from './context/TokenContext';
 import { Buffer } from 'buffer';
+import { Navigate } from 'react-router-dom';
 
 window.Buffer = Buffer;
 
@@ -57,7 +58,8 @@ function App() {
                 <Route path="/mint-token" element={<MintToken />} />
                 <Route path="/send-token" element={<SendToken />} />
                 <Route path="/transactions" element={<TransactionHistory />} />
-                <Route path="*" element={<Home />} />
+     
+                <Route path="*" element={<Navigate to="/" />} />
 
               </Routes>
             </Layout>

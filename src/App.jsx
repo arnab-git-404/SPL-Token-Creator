@@ -28,8 +28,6 @@ window.Buffer = Buffer;
 
 function App() {
 
-
-
   const network = WalletAdapterNetwork.Devnet; // Change to 'testnet' or 'mainnet-beta' as needed
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
   

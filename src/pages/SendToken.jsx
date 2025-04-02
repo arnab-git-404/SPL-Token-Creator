@@ -39,8 +39,10 @@ const SendToken = () => {
   }, [publicKey, connection]);
 
   const handleTransactionSuccess = (result) => {
-    const { signature, amount, recipient } = result;
+    const { signature, amount, destination } = result;
     
+    console.log("recipient address", destination)
+
     // Add to transaction history
     setTransactionHistory(prev => [
       {
@@ -48,7 +50,7 @@ const SendToken = () => {
         signature,
         timestamp: new Date(),
         amount,
-        recipient,
+        destination,
         status: 'confirmed'
       },
       ...prev
@@ -69,7 +71,6 @@ const SendToken = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Header Section with improved visibility */}
-
 
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -121,8 +122,8 @@ const SendToken = () => {
                     <div className="mt-3 pb-2 border-b border-gray-100">
                       <div className="flex justify-between">
                         <div className="text-gray-600">To:</div>
-                        <div className="font-medium text-gray-900" title={tx.recipient}>
-                          {formatAddress(tx.recipient)}
+                        <div className="font-medium text-gray-900" title={'Recipient Address'}>
+                          {formatAddress(tx.destination)}
                         </div>
                       </div>
                     </div>

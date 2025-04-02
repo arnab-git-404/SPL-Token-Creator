@@ -145,13 +145,6 @@ The application includes comprehensive error handling for:
 - Token burning functionality
 - Token swap integration
 - Advanced token configurations (freezing, minting limits)
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Credits
-Developed as part of an internship assignment for learning Solana blockchain development.
-
 ---
 
 *Note: This project is for educational purposes. Always conduct proper testing before using on mainnet with real funds.*

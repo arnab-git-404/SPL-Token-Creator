@@ -678,12 +678,12 @@ const LandingPage = () => {
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               
             <Link to="/create-token">
-            <button className="hover:cursor-pointer bg-white text-indigo-600 hover:bg-indigo-50 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
+            <button className="font-medium hover:cursor-pointer bg-white text-indigo-600 hover:bg-indigo-50 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
                 <span className="mr-2"></span> Create Token
               </button>
               </Link>
  <Link to="/home">
-              <button className="hover:cursor-pointer bg-indigo-600 text-white hover:bg-indigo-700 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
+              <button className="font-medium hover:cursor-pointer bg-indigo-600 text-white hover:bg-indigo-700 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
                 {/* Get Started <span className="ml-2">→</span> */}
 
                 Get Started <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

@@ -870,7 +870,7 @@ const LandingPage = () => {
                   <div className="mt-4 flex">
                     <Link to="/create-token">
                       <Button className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
-                        <FiPlus className="mr-1" /> Create Token Guide
+                        <FiPlus className="mr-1" /> Create A Token 
                       </Button>
                     </Link>
                   </div>

@@ -24,6 +24,8 @@ import { TokenProvider } from "./context/TokenContext";
 import { Buffer } from "buffer";
 import { Navigate } from "react-router-dom";
 import LandingPage from "./pages/Landing";
+import BurnToken from './pages/BurnToken';
+
 
 window.Buffer = Buffer;
 
@@ -57,6 +59,7 @@ function App() {
                     path="/transactions"
                     element={<TransactionHistory />}
                   />
+                <Route path="/burn-token" element={<BurnToken />} />
 
                   <Route path="*" element={<Navigate to="/" />} />
                 </Routes>

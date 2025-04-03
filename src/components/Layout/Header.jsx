@@ -247,7 +247,7 @@ const Header = () => {
 
   const navLinks = [
     
-    { path: "/", label: "Home" },
+    { path: "/home", label: "Home" },
     { path: "/create-token", label: "Create Token" },
     { path: "/burn-token", label: "Burn Token" },
     { path: "/mint-token", label: "Mint Token" },

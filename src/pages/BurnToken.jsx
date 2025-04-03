@@ -130,9 +130,9 @@ const BurnToken = () => {
             </button>
 
 
-            <Link to="/" className="w-full sm:w-auto">
+            <Link to="/home" className="w-full sm:w-auto">
               <button className="h-12 w-full px-4 rounded-md flex items-center justify-center hover:cursor-pointer bg-indigo-600 text-white hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                <FiArrowLeft className="mr-2" /> Back to Dashboard
+                <FiArrowLeft className="mr-2" /> Back to Home
               </button>
             </Link>
           </div>

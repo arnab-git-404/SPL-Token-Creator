@@ -678,13 +678,15 @@ const LandingPage = () => {
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               
             <Link to="/create-token">
-            <button className="bg-white text-indigo-600 hover:bg-indigo-50 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
-                <span className="mr-2">+</span> Create Token
+            <button className="hover:cursor-pointer bg-white text-indigo-600 hover:bg-indigo-50 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
+                <span className="mr-2"></span> Create Token
               </button>
               </Link>
  <Link to="/home">
-              <button className="bg-indigo-600 text-white hover:bg-indigo-700 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
-                Get Started <span className="ml-2">→</span>
+              <button className="hover:cursor-pointer bg-indigo-600 text-white hover:bg-indigo-700 transition px-6 py-3 rounded-full shadow-lg flex items-center justify-center w-full sm:w-auto">
+                {/* Get Started <span className="ml-2">→</span> */}
+
+                Get Started <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               </Link>
             </div>
@@ -869,8 +871,8 @@ const LandingPage = () => {
                 {index === 0 && (
                   <div className="mt-4 flex">
                     <Link to="/create-token">
-                      <Button className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
-                        <FiPlus className="mr-1" /> Create A Token 
+                      <Button className="hover:cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
+                         Create Your First Token 
                       </Button>
                     </Link>
                   </div>
@@ -881,7 +883,7 @@ const LandingPage = () => {
                     <Button
                       onClick={handleAirdrop}
                       disabled={isAirdropping || !connected}
-                      className="bg-amber-500 hover:bg-amber-600 text-white text-sm px-4 py-2 rounded-lg flex items-center"
+                      className="hover:cursor-pointer bg-indigo-500 hover:bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg flex items-center"
                     >
                       <BsCashCoin className="mr-1" />{" "}
                       {isAirdropping ? "Processing..." : "Request Airdrop"}
@@ -892,8 +894,8 @@ const LandingPage = () => {
                 {index === 3 && (
                   <div className="mt-4 flex">
                     <Link to="/burn-token">
-                      <Button className="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
-                        <FiTrash2 className="mr-1" /> Burning Guide
+                      <Button className="hover:cursor-pointer bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
+                        <FiTrash2 className="mr-1" /> Burn Your Minted Token
                       </Button>
                     </Link>
                   </div>

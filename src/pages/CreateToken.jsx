@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Link } from "react-router-dom";
@@ -53,9 +51,6 @@ const CreateToken = () => {
 
   return (
     <div className="max-w-3xl mx-auto">
-
-
-
       {notification && (
         <Notification
           type={notification.type}
@@ -68,7 +63,6 @@ const CreateToken = () => {
       {!connected ? (
         <Card className="mb-6 transition-all hover:shadow-lg">
           <div className="flex flex-col items-center space-y-6 py-8">
-            
             <h2 className="text-2xl font-bold text-indigo-700">
               Connect Your Wallet
             </h2>
@@ -193,9 +187,10 @@ const CreateToken = () => {
               <FiAward className="mr-2" /> Create Another Token
             </button>
 
-            <Link to="/mint-token" className="w-full sm:w-auto"
-                onClick={() => updateTokenData(createdToken)}
-
+            <Link
+              to="/mint-token"
+              className="w-full sm:w-auto"
+              onClick={() => updateTokenData(createdToken)}
             >
               <button className="h-12 w-full px-4 rounded-md flex items-center justify-center hover:cursor-pointer bg-indigo-600 text-white hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 Mint Tokens <FiExternalLink className="ml-2" />

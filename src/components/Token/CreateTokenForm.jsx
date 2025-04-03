@@ -169,7 +169,7 @@ const CreateTokenForm = ({ onSuccess }) => {
         )
       );
 
-      toast.success(`Token ${formData.name} (${formData.symbol}) created successfully!`);
+      // toast.success(`Token ${formData.name} (${formData.symbol}) created successfully!`);
       
       // Call the onSuccess callback with token data
       if (onSuccess) {

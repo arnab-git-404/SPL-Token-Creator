@@ -11,6 +11,7 @@ const TokenSelector = ({ selectedToken, onTokenSelect }) => {
 
   useEffect(() => {
 
+    
     const loadTokens = async () => {
       if (!publicKey) return;
 

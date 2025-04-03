@@ -6,9 +6,12 @@ import {
   clusterApiUrl,
   Connection,
   Keypair,
+  sendAndConfirmTransaction,
+
 } from "@solana/web3.js";
 import {
   getMint,
+
   TOKEN_PROGRAM_ID,
   ASSOCIATED_TOKEN_PROGRAM_ID,
   MintLayout,
@@ -16,9 +19,14 @@ import {
   getAssociatedTokenAddress, // Added for more efficient token account handling
   createMintToCheckedInstruction, // Better than deprecated methods
   createAssociatedTokenAccountInstruction, // Added for proper token account setup
+  createBurnCheckedInstruction,
 } from "@solana/spl-token";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import * as splToken from '@solana/spl-token';
+
+
+
+
 
 // Create a Solana connection to the devnet
 const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
@@ -119,6 +127,66 @@ export const createToken = async (wallet, name, symbol, decimals = 9) => {
     throw error;
   }
 };
+
+
+// Add this function to your tokenService.js
+export const burnTokens = async ({ tokenAddress, amount, decimals, wallet }) => {
+
+  
+ try {
+    // Connect to Solana devnet
+    const connection = new Connection("https://api.devnet.solana.com", "confirmed");
+    
+    // Convert tokenAddress to PublicKey
+    const mintPubkey = new PublicKey(tokenAddress);
+    
+    // Get the associated token account for this token for the user's wallet
+    const associatedTokenAccount = await getAssociatedTokenAddress(
+      mintPubkey,
+      wallet
+    );
+    
+    // Convert amount to smallest units based on token decimals
+    // For example, if amount is 1.5 and decimals is 6, this will be 1,500,000
+    const amountInSmallestUnits = Math.floor(amount * Math.pow(10, decimals));
+    
+    // Create the burn instruction
+    const burnInstruction = createBurnCheckedInstruction(
+      associatedTokenAccount,     // Source account (token account)
+      mintPubkey,                 // Mint (token) address
+      wallet,                     // Owner of the source account
+      amountInSmallestUnits,      // Amount to burn
+      decimals                    // Decimals of the token
+    );
+    
+    // Create transaction and add the burn instruction
+    const transaction = new Transaction().add(burnInstruction);
+    
+    // Set recent blockhash and fee payer
+    transaction.feePayer = wallet;
+    const { blockhash } = await connection.getLatestBlockhash();
+    transaction.recentBlockhash = blockhash;
+    
+    // Send transaction using wallet adapter (wallet needs to sign it)
+    // This will trigger a popup in the user's wallet
+    const { signature } = await window.solana.signAndSendTransaction(transaction);
+    
+    // Confirm transaction
+    await connection.confirmTransaction(signature, "confirmed");
+    
+    // Return the transaction signature and other details
+    return {
+      signature,
+      success: true,
+      amount,
+      tokenAddress,
+    };
+  } catch (error) {
+    console.error("Error in burnTokens:", error);
+    throw new Error(`Failed to burn tokens: ${error.message}`);
+  }
+};
+
 
 // Function to mint tokens - Updated to use modern SPL Token methods
 export const mintToken = async (
@@ -362,7 +430,14 @@ export const fetchUserTokens = async (publicKey) => {
       });
     }
 
+
+    tokens.sort((a, b) => b.amount - a.amount);
+    
+
+
+
     return tokens;
+
   } catch (error) {
     console.error("Error fetching user tokens:", error);
     throw error;

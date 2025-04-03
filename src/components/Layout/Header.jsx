@@ -244,23 +244,29 @@ const Header = () => {
     return () => clearInterval(id);
   }, [publicKey, connection]);
 
+
   const navLinks = [
+    
     { path: "/", label: "Home" },
     { path: "/create-token", label: "Create Token" },
     { path: "/burn-token", label: "Burn Token" },
     { path: "/mint-token", label: "Mint Token" },
     { path: "/send-token", label: "Send Token" },
     { path: "/transactions", label: "Transactions" },
+
   ];
+
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+
   // Close sidebar when clicking outside
   const handleOutsideClick = () => {
     setIsSidebarOpen(false);
   };
+
 
   // Prevent body scrolling when sidebar is open
   useEffect(() => {

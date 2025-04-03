@@ -60,7 +60,7 @@ function App() {
                     element={<TransactionHistory />}
                   />
                 <Route path="/burn-token" element={<BurnToken />} />
-
+                
                   <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
               </Layout>

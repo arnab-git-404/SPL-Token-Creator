@@ -166,7 +166,6 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
   const [transactionState, setTransactionState] = useState("idle"); // idle, verifying, processing, success
 
 
-
   // Load user tokens when component mounts or when publicKey changes
   useEffect(() => {
     const loadTokens = async () => {

@@ -145,16 +145,25 @@
 import React, { useState, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { toast } from "react-toastify";
-import { FiTrash2 } from "react-icons/fi";
+import { FiTrash2, FiCheck } from "react-icons/fi";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import { burnTokens, fetchUserTokens } from "../../utils/solana";
 import useNotification from "../../hooks/useNotification";
 import Loader from "../UI/Loader";
+import Notification from "../../components/UI/Notification";
 
 const BurnTokenForm = ({ onSuccess, selectedToken }) => {
   const { publicKey } = useWallet();
-  const { notifyError, notifyInfo } = useNotification();
+  // const { notifyError, notifyInfo } = useNotification();
+
+  const {
+    notification,
+    hideNotification,
+    notifySuccess,
+    notifyError,
+    notifyInfo,
+  } = useNotification();
 
   const [isLoading, setIsLoading] = useState(false);
   const [isFetchingTokens, setIsFetchingTokens] = useState(false);
@@ -164,7 +173,6 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
   const [tokens, setTokens] = useState([]);
   const [tokenError, setTokenError] = useState("");
   const [transactionState, setTransactionState] = useState("idle"); // idle, verifying, processing, success
-
 
   // Load user tokens when component mounts or when publicKey changes
   useEffect(() => {
@@ -181,10 +189,7 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
         setTokens(userTokens);
 
         // If selectedToken is not in the list, clear selection
-        if (
-          token &&
-          !userTokens.some((t) => t.mint === token.mint)
-        ) {
+        if (token && !userTokens.some((t) => t.mint === token.mint)) {
           setToken(null);
         }
       } catch (err) {
@@ -198,8 +203,6 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
     loadTokens();
   }, [publicKey]);
 
-
-
   // Update token if selectedToken prop changes
   useEffect(() => {
     if (selectedToken) {
@@ -207,15 +210,12 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
     }
   }, [selectedToken]);
 
-
   const handleTokenChange = (e) => {
     const selectedMintAddress = e.target.value;
     if (selectedMintAddress === "") {
       setToken(null);
     } else {
-      const selectedToken = tokens.find(
-        (t) => t.mint === selectedMintAddress
-      );
+      const selectedToken = tokens.find((t) => t.mint === selectedMintAddress);
       setToken(selectedToken || null);
     }
     setError("");
@@ -232,16 +232,27 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
     }
   };
 
+
+  const formatAddress = (address) => {
+    if (!address) return '';
+    return `${address.slice(0, 8)}...${address.slice(-8)}`;
+  };
+
   const validateForm = () => {
     if (!token) {
       setError("Please select a token to burn");
       return false;
     }
 
-    // if (!amount || parseFloat(amount) <= 0  ) {
-    //   setError("Please enter a valid amount to burn");
-    //   return false;
-    // }
+    if (!amount || parseFloat(amount) <= 0) {
+      setError("Please enter a valid amount to burn");
+      return false;
+    }
+
+    if (parseFloat(amount) > token.amount) {
+      setError("You cannot burn more tokens than you have, please check your balance.");
+      return false;
+    }
 
     return true;
   };
@@ -254,21 +265,15 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
     setIsLoading(true);
     setTransactionState("verifying");
 
-
-    notifyInfo(
-      "Burning tokens... Please approve the transaction in your wallet."
-    );
-
     try {
+      // Short delay to show the verifying state
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  // Short delay to show the verifying state
-  await new Promise(resolve => setTimeout(resolve, 1000));
+      setTransactionState("processing");
 
-
-  setTransactionState("processing");
-  notifyInfo("Burning tokens... Please approve the transaction in your wallet.");
-  
-
+      notifyInfo(
+        "Burning tokens... Please approve the transaction in your wallet."
+      );
 
       const result = await burnTokens({
         tokenAddress: token.mint,
@@ -279,6 +284,10 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
 
       setTransactionState("success");
 
+      // Wait a moment before calling onSuccess for better UX
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      console.log("Burn result:", result);
 
       onSuccess({
         tokenName: token.name,
@@ -287,64 +296,58 @@ const BurnTokenForm = ({ onSuccess, selectedToken }) => {
         signature: result.signature,
       });
 
-// Reset form after success
-setTimeout(() => {
-  setTransactionState("idle");
-  setIsLoading(false);
-}, 1500);
-
-
-
+      // Reset form after success
+      setTimeout(() => {
+        setTransactionState("idle");
+        setIsLoading(false);
+      }, 1500);
     } catch (error) {
       console.error("Error burning tokens:", error);
       notifyError(error.message || "Failed to burn tokens. Please try again.");
       setTransactionState("idle");
-
     } finally {
       setIsLoading(false);
     }
   };
 
-
-// Get button content based on transaction state
-const getButtonContent = () => {
-  switch (transactionState) {
-    case "verifying":
-      return (
-        <>
-          <span className="mr-2 inline-block animate-spin">⟳</span>
-          <span>Verifying...</span>
-        </>
-      );
-    case "processing":
-      return (
-        <>
-          <span className="mr-2 inline-block animate-pulse">🔥</span>
-          <span>Processing Transaction...</span>
-        </>
-      );
-    case "success":
-      return (
-        <>
-          <FiCheck className="mr-2 text-xl" />
-          <span>Tokens Burned!</span>
-        </>
-      );
-    default:
-      return (
-        <>
-          <FiTrash2 className={`mr-2 text-xl ${!isLoading && "animate-pulse"}`} />
-          <span className="uppercase tracking-wider">Burn Tokens</span>
-        </>
-      );
-  }
-};
-
-
+  // Get button content based on transaction state
+  const getButtonContent = () => {
+    switch (transactionState) {
+      case "verifying":
+        return (
+          <>
+            <span className="mr-2 inline-block animate-spin">⟳</span>
+            <span>Verifying...</span>
+          </>
+        );
+      case "processing":
+        return (
+          <>
+            <span className="mr-2 inline-block animate-pulse">🔥</span>
+            <span>Processing Transaction...</span>
+          </>
+        );
+      case "success":
+        return (
+          <>
+            <FiCheck className="mr-2 text-xl" />
+            <span>Tokens Burned!</span>
+          </>
+        );
+      default:
+        return (
+          <>
+            <FiTrash2
+              className={`mr-2 text-xl ${!isLoading && "animate-pulse"}`}
+            />
+            <span className="uppercase tracking-wider">Burn Tokens</span>
+          </>
+        );
+    }
+  };
 
   // Render token selector content based on state
   const renderTokenSelector = () => {
-
     if (isFetchingTokens) {
       return (
         <div className="mt-2 text-gray-900">
@@ -371,6 +374,15 @@ const getButtonContent = () => {
 
     return (
       <div className="relative">
+        {notification && (
+          <Notification
+            type={notification.type}
+            message={notification.message}
+            autoClose={notification.autoClose}
+            onClose={hideNotification}
+          />
+        )}
+
         <select
           className="text-gray-500 block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
           value={token ? token.mint : ""}
@@ -379,7 +391,7 @@ const getButtonContent = () => {
           <option value="">-- Select a token --</option>
           {tokens.map((token) => (
             <option key={token.mint} value={token.mint}>
-              {token.mint} - {token.amount} available
+              {formatAddress(token.mint)} 
             </option>
           ))}
         </select>
@@ -403,7 +415,6 @@ const getButtonContent = () => {
       </h2>
 
       <form onSubmit={handleSubmit}>
-
         <div className="mb-6">
           <label className="block text-gray-700 text-sm font-bold mb-2">
             Select Token *
@@ -444,7 +455,6 @@ const getButtonContent = () => {
           // isLoading={isLoading}
           isLoading={isLoading}
           disabled={isLoading}
-
           className="hover:cursor-pointer bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-red-400/30 transition-all duration-200 
   border border-red-500 py-3 px-6 text-white font-bold rounded-lg w-full md:w-auto flex items-center 
   justify-center transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-red-500 
@@ -454,8 +464,7 @@ const getButtonContent = () => {
 
           <span className="uppercase tracking-wider">Burn Tokens </span> */}
 
-{getButtonContent()}
-
+          {getButtonContent()}
         </Button>
       </form>
     </Card>

@@ -51,6 +51,7 @@ const CreateToken = () => {
 
   return (
     <div className="max-w-3xl mx-auto">
+      
       {notification && (
         <Notification
           type={notification.type}

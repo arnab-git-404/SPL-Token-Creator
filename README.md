@@ -142,7 +142,6 @@ The application includes comprehensive error handling for:
 
 ## Future Enhancements
 - Token metadata support (images, descriptions)
-- Token burning functionality
 - Token swap integration
 - Advanced token configurations (freezing, minting limits)
 ---

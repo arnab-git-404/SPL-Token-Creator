@@ -1,34 +1,4 @@
-// en creating or managing tokens, you'll need to pay Solana network fees which are typically very low (fractions of SOL). Our platform may charge additional fees for certain premium features which will be clearly displayed before you confirm any transaction."
-//     },
-//     {
-//       question: "Can I burn tokens after creating them?",
-//       answer: "Yes, you can burn tokens to permanently remove them from circulation. This is useful for reducing supply or implementing deflationary tokenomics. Navigate to the Burn Token section, select the token and amount you wish to burn, and confirm the transaction."
-//     },
-//     {
-//       question: "How do I transfer tokens to another wallet?",
-//       answer: "To transfer tokens, go to the Transfer Token page, select the token you wish to send, enter the recipient's Solana address, specify the amount, and confirm the transaction. The transfer will be processed within seconds on the Solana network."
-//     },
-//     {
-//       question: "Are the tokens created on this platform compatible with other Solana wallets?",
-//       answer: "Yes, all tokens created on our platform are SPL tokens (Solana's token standard) and are fully compatible with any Solana-compatible wallet, exchange, or application."
-//     }
-//   ];
 
-//   return (
-//     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-//       {/* Hero Section */}
-//       <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl shadow-xl overflow-hidden mb-12">
-//         <div className="px-8 py-16 sm:p-16 xl:p-20 text-center sm:text-left">
-//           <div className="max-w-2xl mx-auto sm:mx-0">
-//             <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl tracking-tight">
-//               Welcome to Solana Token Manager
-//             </h1>
-//             <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
-//               Create, manage, and transfer Solana tokens with our intuitive platform.
-//               Build your crypto ecosystem with ease.
-//             </p>
-//             <div className="mt-10 flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-//               <Link to="/create-token">
 //                 <Button className="bg-white text-indigo-600 hover:bg-indigo-50 transition px-8 py-3 rounded-lg shadow-lg flex items-center justify-center w-full">
 //                   <FiPlus className="mr-2" /> Create Token
 //                 </Button>

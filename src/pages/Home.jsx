@@ -33,7 +33,6 @@ import {
   BsCashCoin,
 } from "react-icons/bs";
 import { AiOutlineFire, AiOutlineSwap } from "react-icons/ai";
-import { IoWalletOutline, IoPeopleOutline } from "react-icons/io5";
 
 const Home = () => {
   const { publicKey, connected } = useWallet();

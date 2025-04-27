@@ -177,14 +177,6 @@ t-6 text-xl text-indigo-100 max-w-3xl">
                 </WalletConnectButton>
               )}
 
-              <Link to="/home">
-                <Button className="hover:cursor-pointer  font-medium bg-transparent text-white border border-white  hover:bg-opacity-10 transition px-8 py-3 rounded-lg flex items-center justify-center w-full">
-                  Get Started{" "}
-                  <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-80C120,64,240,32,360,26.7C480,21,600,43,720,53.3C840,64,960,64,1080,56C1200,48,1320,32,1380,24L1440,16L1440,128L1380,128C1320,128,1200,128,1080,128C960,128,840,128,720,128C600,128,480,128,360,128C240,128,120,128,60,128L0,128Z"
-            ></path>
-          </svg>
-        </div>
       </div> */}
 
 

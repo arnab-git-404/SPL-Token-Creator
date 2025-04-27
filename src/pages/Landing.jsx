@@ -161,16 +161,6 @@ const LandingPage = () => {
         />
       )}
 
-      {/* Hero Section */}
-      {/* <div
-letOutline className="mr-2" /> Connect Wallet
-                </WalletConnectButton>
-              )}
-
-      </div> */}
-
-
-
 
       {/* 2nd ONE  */}
       <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl shadow-xl overflow-hidden mb-12">

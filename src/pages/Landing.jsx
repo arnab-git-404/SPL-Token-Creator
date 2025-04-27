@@ -387,43 +387,7 @@
 //               >
 //                 <p className="text-gray-600">{faq.answer}</p>
 
-//                 {/* Conditional additional content based on question type */}
-//                 {index === 0 && ( // First FAQ about creating tokens
-//                   <div className="mt-4 flex">
-//                     <Link to="/create-token">
-//                       <Button className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
-//                         <FiPlus className="mr-1" /> Create Token Guide
-//                       </Button>
-//                     </Link>
-//                   </div>
-//                 )}
 
-//                 {index === 2 && ( // Third FAQ about burning tokens
-//                   <div className="mt-4 flex">
-//                     <Link to="/burn-token">
-//                       <Button className="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2 rounded-lg flex items-center">
-//                         <FiTrash2 className="mr-1" /> Burning Guide
-//                       </Button>
-//                     </Link>
-//                   </div>
-//                 )}
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-
-//         <div className="mt-4 text-center">
-//           <Link to="/support" className="text-indigo-600 hover:text-indigo-800 font-medium flex items-center justify-center">
-//             <span>View all support articles</span>
-//             <FiArrowRight className="ml-1" />
-//           </Link>
-//         </div>
-//       </div>
-
-{
-  /* CTA Section */
-}
-//       <div className="bg-gray-900 rounded-2xl shadow-xl overflow-hidden mb-12">
 //         <div className="px-8 py-12 md:py-16 md:px-12 text-center">
 //           <h2 className="text-3xl font-bold text-white mb-4">Ready to build on Solana?</h2>
 //           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">

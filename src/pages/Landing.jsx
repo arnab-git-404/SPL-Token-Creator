@@ -163,17 +163,7 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       {/* <div
-        className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl shadow-xl 
-      overflow-hidden mb-12"
-t-6 text-xl text-indigo-100 max-w-3xl">
-              Create, manage, and transfer Solana tokens with our intuitive
-              platform. Build your crypto ecosystem with ease.
-            </p>
-
-
-              ) : (
-                <WalletConnectButton className=" hover:cursor-pointer bg-white text-indigo-600 hover:bg-indigo-50 transition px-8 py-3 rounded-lg shadow-lg flex items-center justify-center w-full">
-                  <IoWalletOutline className="mr-2" /> Connect Wallet
+letOutline className="mr-2" /> Connect Wallet
                 </WalletConnectButton>
               )}
 

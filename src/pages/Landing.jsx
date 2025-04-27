@@ -294,49 +294,7 @@
 //           </h2>
 //           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 //             <div>
-//               <div className="text-4xl font-bold mb-2">25K+</div>
-//               <div className="text-indigo-200">Tokens Created</div>
-//             </div>
-//             <div>
-//               <div className="text-4xl font-bold mb-2">1.2M+</div>
-//               <div className="text-indigo-200">Transactions</div>
-//             </div>
-//             <div>
-//               <div className="text-4xl font-bold mb-2">45K+</div>
-//               <div className="text-indigo-200">Users</div>
-//             </div>
-//             <div>
-//               <div className="text-4xl font-bold mb-2">$120M+</div>
-//               <div className="text-indigo-200">Value Managed</div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Getting Started Section */}
-//       <div className="mb-12">
-//         <h2 className="text-2xl font-bold text-gray-50 mb-6 flex items-center">
-//           <BsStars className="mr-2 text-indigo-600 " /> Getting Started
-//         </h2>
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-//           <Card className="bg-white border border-gray-200 p-6">
-//             <div className="flex flex-col items-center text-center">
-
-//               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-//                 <span className="text-blue-600 font-bold">1</span>
-//               </div>
-
-//               <h3 className="text-lg font-bold mb-2 text-gray-700 ">Connect Wallet</h3>
-//               <p className="text-gray-600">
-//                 Connect your Solana wallet to access all features of the platform.
-//               </p>
-//             </div>
-//           </Card>
-
-//           <Card className="bg-white border border-gray-200 p-6">
-//             <div className="flex flex-col items-center text-center">
-//               <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
-//                 <span className="text-purple-600 font-bold">2</span>
+//              <span className="text-purple-600 font-bold">2</span>
 //               </div>
 //               <h3 className="text-lg font-bold mb-2 text-gray-700 ">Create Your Token</h3>
 //               <p className="text-gray-600">

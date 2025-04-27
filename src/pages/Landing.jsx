@@ -1,26 +1,4 @@
 
-//                 </thead>
-//                 <tbody className="bg-white divide-y divide-gray-200">
-//                   {recentActivity.map((activity, index) => (
-//                     <tr key={index} className="hover:bg-gray-50">
-//                       <td className="px-6 py-4 whitespace-nowrap">
-//                         <div className="flex items-center">
-//                           {activity.type === "transfer" && <FiRepeat className="text-blue-500 mr-2" />}
-//                           {activity.type === "burn" && <AiOutlineFire className="text-red-500 mr-2" />}
-//                           {activity.type === "mint" && <FiGift className="text-green-500 mr-2" />}
-//                           <span className="font-medium">{activity.type}</span>
-//                         </div>
-//                       </td>
-//                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                         {activity.token}
-//                       </td>
-//                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                         {activity.amount}
-//                       </td>
-//                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                         {activity.time}
-//                       </td>
-//                       <td className="px-6 py-4 whitespace-nowrap">
 //                         <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
 //                           {activity.status}
 //                         </span>

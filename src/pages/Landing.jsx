@@ -181,22 +181,7 @@ t-6 text-xl text-indigo-100 max-w-3xl">
                 <Button className="hover:cursor-pointer  font-medium bg-transparent text-white border border-white  hover:bg-opacity-10 transition px-8 py-3 rounded-lg flex items-center justify-center w-full">
                   Get Started{" "}
                   <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div className="relative h-32 bg-indigo-600 md:h-40 lg:h-48">
-          <svg
-            className="absolute -top-12 left-0 w-full text-indigo-600"
-            viewBox="0 0 1440 128"
-          >
-            <path
-              fill="currentColor"
-              d="M0,96L60,80C120,64,240,32,360,26.7C480,21,600,43,720,53.3C840,64,960,64,1080,56C1200,48,1320,32,1380,24L1440,16L1440,128L1380,128C1320,128,1200,128,1080,128C960,128,840,128,720,128C600,128,480,128,360,128C240,128,120,128,60,128L0,128Z"
+80C120,64,240,32,360,26.7C480,21,600,43,720,53.3C840,64,960,64,1080,56C1200,48,1320,32,1380,24L1440,16L1440,128L1380,128C1320,128,1200,128,1080,128C960,128,840,128,720,128C600,128,480,128,360,128C240,128,120,128,60,128L0,128Z"
             ></path>
           </svg>
         </div>

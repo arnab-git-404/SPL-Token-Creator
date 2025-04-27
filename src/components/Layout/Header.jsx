@@ -1,25 +1,5 @@
 
 //             </div>
-
-//             {navLinks.map((link) => (
-//               <Link
-//                 key={link.path}
-//                 to={link.path}
-//                 className="py-3 h-16 px-4 w-full text-gray-300 hover:text-white bg-gray-700 transition-colors duration-200"
-//                 onClick={() => setIsSidebarOpen(false)}
-//               >
-//                 {link.label}
-//               </Link>
-//             ))}
-
-//             <div className=" px-4 py-2 rounded-md bg-gray-700 ">
-//               <p
-//                 className="text-sm h-10 text-gray-300 hover:text-white"
-//                 onClick={disconnect}
-//               >
-//                 Disconnect
-//               </p>
-//             </div>
 //           </nav>
 //         </div>
 //       ) : (

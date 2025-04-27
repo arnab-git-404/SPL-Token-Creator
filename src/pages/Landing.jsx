@@ -153,50 +153,7 @@
 //           {isLoading ? (
 //             <div className="w-full flex justify-center py-8">
 //               <Loader size="medium" message="Loading your tokens..." />
-//             </div>
-//           ) : (
-//             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-//               <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-indigo-100 shadow hover:shadow-lg transition">
-//                 <div className="flex items-center">
-//                   <div className="p-3 rounded-full bg-blue-100 mr-4">
-//                     <IoWalletOutline className="h-6 w-6 text-blue-600" />
-//                   </div>
-//                   <div>
-//                     <p className="text-sm text-gray-600">Your Tokens</p>
-//                     <p className="text-xl font-bold text-gray-800">{tokens.length}</p>
-//                   </div>
-//                 </div>
-//               </Card>
-
-//               <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100 shadow hover:shadow-lg transition">
-//                 <div className="flex items-center">
-//                   <div className="p-3 rounded-full bg-green-100 mr-4">
-//                     <BsLightningCharge className="h-6 w-6 text-green-600" />
-//                   </div>
-//                   <div>
-//                     <p className="text-sm text-gray-600">Recent Activity</p>
-//                     <p className="text-xl font-bold text-gray-800">{recentActivity.length}</p>
-//                   </div>
-//                 </div>
-//               </Card>
-
-//               <Card className="bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100 shadow hover:shadow-lg transition">
-//                 <div className="flex items-center">
-//                   <div className="p-3 rounded-full bg-purple-100 mr-4">
-//                     <BsShieldCheck className="h-6 w-6 text-purple-600" />
-//                   </div>
-//                   <div>
-//                     <p className="text-sm text-gray-600">Account Status</p>
-//                     <p className="text-xl font-bold text-gray-800">Active</p>
-//                   </div>
-//                 </div>
-//               </Card>
-//             </div>
-//           )}
-//         </div>
-//       ) : (
-//         <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-12 text-center">
-//           <IoPeopleOutline className="h-12 w-12 mx-auto text-blue-500 mb-4" />
+//        <IoPeopleOutline className="h-12 w-12 mx-auto text-blue-500 mb-4" />
 //           <h3 className="text-xl font-bold text-gray-800 mb-2">Connect Your Wallet</h3>
 //           <p className="text-gray-600 mb-6">
 //             Connect your Solana wallet to view your tokens and access all features.
@@ -286,21 +243,7 @@
 //         </div>
 //       )}
 
-//       {/* Stats Section */}
-//       <div className="mb-12 bg-gradient-to-r from-indigo-800 to-purple-800 rounded-2xl shadow-xl overflow-hidden">
-//             <button
-//                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none"
-//                 onClick={() => toggleFaq(index)}
-//               >
-//                 <span className="font-medium text-gray-900">{faq.question}</span>
-//                 {activeFaq === index ? (
-//                   <FiChevronUp className="text-indigo-600" />
-//                 ) : (
-//                   <FiChevronDown className="text-gray-500" />
-//                 )}
-//               </button>
-
-//     </div>
+// div>
 //   );
 // };
 

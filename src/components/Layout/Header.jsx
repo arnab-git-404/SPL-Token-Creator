@@ -1,28 +1,4 @@
-// import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-// import WalletConnectButton from "../Wallet/WalletConnectButton";
-// import WalletInfo from "../Wallet/WalletInfo";
-// import { HiMenu, HiX } from "react-icons/hi";
 
-// import { useWallet, useConnection } from "@solana/wallet-adapter-react";
-// import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-// import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-// import { useMediaQuery } from 'react-responsive';
-
-// const Header = () => {
-//   const { connected } = useWallet();
-//   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-//   const [balance, setBalance] = useState(0);
-//   const [loading, setLoading] = useState(true);
-//   const { publicKey, disconnect } = useWallet();
-//   const { connection } = useConnection();
-
-//   const isMobile = useMediaQuery({ maxWidth: 767 });
-//   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-
-//   useEffect(() => {
-//     const fetchBalance = async () => {
-//       if (!publicKey) return;
 //       try {
 //         setLoading(true);
 //         const bal = await connection.getBalance(publicKey);

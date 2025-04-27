@@ -1,29 +1,4 @@
 
-//             </div>
-//           </div>
-//         </div>
-//         <div className="relative h-32 bg-indigo-600 md:h-40 lg:h-48">
-//           <svg className="absolute -top-12 left-0 w-full text-indigo-600" viewBox="0 0 1440 128">
-//             <path fill="currentColor" d="M0,96L60,80C120,64,240,32,360,26.7C480,21,600,43,720,53.3C840,64,960,64,1080,56C1200,48,1320,32,1380,24L1440,16L1440,128L1380,128C1320,128,1200,128,1080,128C960,128,840,128,720,128C600,128,480,128,360,128C240,128,120,128,60,128L0,128Z"></path>
-//           </svg>
-//         </div>
-//       </div>
-
-//               <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform group-hover:-translate-y-1">
-//                 <div className="flex flex-col h-full">
-//                   <div className="mb-4">{feature.icon}</div>
-//                   <h3 className="text-lg font-bold text-gray-800 mb-2">{feature.title}</h3>
-//                   <p className="text-gray-600 flex-grow mb-4">{feature.description}</p>
-//                   <div className="text-indigo-600 font-medium flex items-center mt-auto group-hover:text-indigo-700">
-//                     Get Started <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-//                   </div>
-//                 </div>
-//               </Card>
-//             </Link>
-//           ))}
-//         </div>
-//       </div>
-
 //       {/* Recent Activity Section */}
 //       {connected && recentActivity.length > 0 && (
 //         <div className="mb-12">

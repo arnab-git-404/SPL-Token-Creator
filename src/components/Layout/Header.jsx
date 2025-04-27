@@ -1,20 +1,4 @@
 
-//       try {
-//         setLoading(true);
-//         const bal = await connection.getBalance(publicKey);
-//         setBalance(bal / LAMPORTS_PER_SOL);
-//       } catch (error) {
-//         console.error("Error fetching balance:", error);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchBalance();
-//     const id = setInterval(fetchBalance, 10000); // Refresh every 10 seconds
-
-//     return () => clearInterval(id);
-//   }, [publicKey, connection]);
 
 //   const navLinks = [
 //     { path: "/", label: "Home" },

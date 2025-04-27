@@ -1,18 +1,4 @@
 
-
-//           <nav className="flex flex-col w-full ">
-//             <div className=" px-4 py-2 rounded-md bg-gray-700 ">
-//               <p className="text-sm text-gray-300 hover:text-white">Balance</p>
-//               <p className="font-medium">
-//                 {loading ? "Loading..." : `${balance.toFixed(4)} SOL`}
-//               </p>
-//             </div>
-
-//             <div className=" px-4 py-2 rounded-md bg-gray-700 ">
-//               <p className="text-sm text-gray-300 hover:text-white">Wallet</p>
-//               <p className="font-medium">
-//                 {publicKey ? formatAddress(publicKey) : "Not connected"}
-//               </p>
 //             </div>
 
 //             {navLinks.map((link) => (

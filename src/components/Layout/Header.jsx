@@ -1,13 +1,4 @@
 
-
-//   const navLinks = [
-//     { path: "/", label: "Home" },
-//     { path: "/create-token", label: "Create Token" },
-//     { path: "/mint-token", label: "Mint Token" },
-//     { path: "/send-token", label: "Send Token" },
-//     { path: "/transactions", label: "Transactions" },
-//   ];
-
 //   const toggleSidebar = () => {
 //     setIsSidebarOpen(!isSidebarOpen);
 //   };

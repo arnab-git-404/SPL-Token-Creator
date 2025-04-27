@@ -1,30 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import { useWallet } from "@solana/wallet-adapter-react";
-
-// import {
-//     FiHome, FiTrendingUp, FiClock, FiGift, FiTrash2,
-//     FiPlus, FiRepeat, FiInfo, FiArrowRight, FiBox,
-//     FiHelpCircle, FiChevronDown, FiChevronUp
-//   } from "react-icons/fi";
-
-// import {
-//   BsCoin, BsLightningCharge, BsShieldCheck, BsStars
-// } from "react-icons/bs";
-// import { AiOutlineFire, AiOutlineSwap } from "react-icons/ai";
-// import { IoWalletOutline, IoPeopleOutline } from "react-icons/io5";
-// import Card from "../components/UI/Card";
-// import Button from "../components/UI/Button";
-// import { fetchUserTokens,  } from "../utils/solana";
-// // import { fetchUserTokens, getRecentTransactions } from "../utils/solana";
-
-// import Loader from "../components/UI/Loader";
-
-// const HomePage = () => {
-//   const { publicKey, connected } = useWallet();
-//   const [tokens, setTokens] = useState([]);
-//   const [isLoading, setIsLoading] = useState(false);
-//   const [recentActivity, setRecentActivity] = useState([]);
 
 //   useEffect(() => {
 //     const fetchData = async () => {

@@ -288,45 +288,7 @@
 
 //       {/* Stats Section */}
 //       <div className="mb-12 bg-gradient-to-r from-indigo-800 to-purple-800 rounded-2xl shadow-xl overflow-hidden">
-//         <div className="px-8 py-12 text-white text-center">
-//           <h2 className="text-2xl font-bold mb-8 flex items-center justify-center">
-//             <FiTrendingUp className="mr-2" /> Platform Stats
-//           </h2>
-//           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-//             <div>
-//              <span className="text-purple-600 font-bold">2</span>
-//               </div>
-//               <h3 className="text-lg font-bold mb-2 text-gray-700 ">Create Your Token</h3>
-//               <p className="text-gray-600">
-//                 Mint your own token with custom supply and metadata in seconds.
-//               </p>
-//             </div>
-//           </Card>
-
-//           <Card className="bg-white border border-gray-200 p-6">
-//             <div className="flex flex-col items-center text-center">
-//               <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mb-4">
-//                 <span className="text-green-600 font-bold">3</span>
-//               </div>
-//               <h3 className="text-lg font-bold mb-2 text-gray-700 ">Manage & Transfer</h3>
-//               <p className="text-gray-600">
-//                 Send tokens to others, swap for different assets, or burn tokens as needed.
-//               </p>
-//             </div>
-//           </Card>
-//         </div>
-//       </div>
-
-//       {/* FAQ Section - Add this before the CTA section */}
-//       <div className="mb-12">
-//         <h2 className="text-2xl font-bold text-gray-50 mb-6 flex items-center">
-//           <FiHelpCircle className="mr-2 text-indigo-600" /> Frequently Asked Questions
-//         </h2>
-
-//         <div className="bg-white rounded-xl shadow-md overflow-hidden">
-//           {faqs.map((faq, index) => (
-//             <div key={index} className={`border-b ${index === faqs.length - 1 ? 'border-none' : 'border-gray-200'}`}>
-//               <button
+//             <button
 //                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none"
 //                 onClick={() => toggleFaq(index)}
 //               >

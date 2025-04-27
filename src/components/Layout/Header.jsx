@@ -1,9 +1,4 @@
 
-//   );
-// };
-
-// export default Header;
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import WalletInfo from "../Wallet/WalletInfo";

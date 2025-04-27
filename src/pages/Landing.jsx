@@ -1,44 +1,4 @@
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       if (!connected || !publicKey) return;
-
-//       setIsLoading(true);
-//       try {
-//         // Fetch user tokens
-//         const userTokens = await fetchUserTokens(publicKey);
-//         setTokens(userTokens);
-
-//         // Fetch recent transactions
-//         // const transactions = await getRecentTransactions(publicKey);
-//         // setRecentActivity(transactions.slice(0, 5)); // Show only 5 most recent
-//       } catch (error) {
-//         console.error("Error fetching data:", error);
-//       } finally {
-//         setIsLoading(false);
-//       }
-//     };
-
-//     fetchData();
-//   }, [publicKey, connected]);
-
-//   // Features data
-//   const features = [
-//     {
-//       icon: <BsCoin className="h-8 w-8 text-indigo-600" />,
-//       title: "Create Token",
-//       description: "Create your own Solana tokens with custom supply and metadata.",
-//       link: "/create-token"
-//     },
-//     {
-//       icon: <AiOutlineSwap className="h-8 w-8 text-green-600" />,
-//       title: "Transfer Tokens",
-//       description: "Send tokens to anyone on the Solana network instantly.",
-//       link: "/transfer-token"
-//     },
-//     {
-//       icon: <AiOutlineFire className="h-8 w-8 text-orange-500" />,
-//       title: "Burn Tokens",
+// "Burn Tokens",
 //       description: "Remove tokens from circulation to manage supply.",
 //       link: "/burn-token"
 //     },

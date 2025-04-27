@@ -143,39 +143,6 @@
 //         </div>
 //       </div>
 
-//       {/* Dashboard Overview */}
-//       {connected ? (
-//         <div className="mb-12">
-//           <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-//             <FiHome className="mr-2 text-indigo-600" /> Your Dashboard
-//           </h2>
-
-//           {isLoading ? (
-//             <div className="w-full flex justify-center py-8">
-//               <Loader size="medium" message="Loading your tokens..." />
-//        <IoPeopleOutline className="h-12 w-12 mx-auto text-blue-500 mb-4" />
-//           <h3 className="text-xl font-bold text-gray-800 mb-2">Connect Your Wallet</h3>
-//           <p className="text-gray-600 mb-6">
-//             Connect your Solana wallet to view your tokens and access all features.
-//           </p>
-//           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg mx-auto">
-//             Connect Wallet
-//           </Button>
-//         </div>
-//       )}
-
-//       {/* Features Section */}
-//       <div className="mb-12">
-//         <h2 className="text-2xl font-bold text-gray-50 mb-6 flex items-center">
-//           <FiBox className="mr-2 text-indigo-600" /> Features
-//         </h2>
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-//           {features.map((feature, index) => (
-//             <Link
-//               to={feature.link}
-//               key={index}
-//               className="group block"
-//             >
 //               <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform group-hover:-translate-y-1">
 //                 <div className="flex flex-col h-full">
 //                   <div className="mb-4">{feature.icon}</div>

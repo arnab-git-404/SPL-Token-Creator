@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { requestAirdrop } from "../utils/solana";
 import Card from "../components/UI/Card";
 import Button from "../components/UI/Button";
-import WalletConnectButton from "../components/Wallet/WalletConnectButton";
 import Notification from "../components/UI/Notification";
 import useNotification from "../hooks/useNotification";
 import WalletInfo from "../components/Wallet/WalletInfo";

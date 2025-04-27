@@ -1,22 +1,4 @@
 
-//                         <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-//                           {activity.status}
-//                         </span>
-//                       </td>
-//                     </tr>
-//                   ))}
-//                 </tbody>
-//               </table>
-//             </div>
-//           </Card>
-//         </div>
-//       )}
-
-// div>
-//   );
-// };
-
-// export default HomePage;
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";

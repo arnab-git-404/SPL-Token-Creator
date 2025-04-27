@@ -1,32 +1,4 @@
-// "Burn Tokens",
-//       description: "Remove tokens from circulation to manage supply.",
-//       link: "/burn-token"
-//     },
-//     {
-//       icon: <FiRepeat className="h-8 w-8 text-purple-600" />,
-//       title: "Swap Tokens",
-//       description: "Exchange tokens at the best available rates.",
-//       link: "/swap-token"
-//     }
-//   ];
-
-//     // Add this state for handling FAQ accordion
-//     const [activeFaq, setActiveFaq] = useState(null);
-
-//     // Toggle FAQ item
-//     const toggleFaq = (index) => {
-//       setActiveFaq(activeFaq === index ? null : index);
-//     };
-
-//   // FAQ data
-//   const faqs = [
-//     {
-//       question: "How do I create a token on Solana?",
-//       answer: "Creating a token on Solana is simple with our platform. Connect your wallet, navigate to the Create Token page, fill in your token details including name, symbol, and initial supply, and confirm the transaction. Our system handles all the technical aspects of deploying your token to the Solana blockchain."
-//     },
-//     {
-//       question: "What fees are associated with token operations?",
-//       answer: "When creating or managing tokens, you'll need to pay Solana network fees which are typically very low (fractions of SOL). Our platform may charge additional fees for certain premium features which will be clearly displayed before you confirm any transaction."
+// en creating or managing tokens, you'll need to pay Solana network fees which are typically very low (fractions of SOL). Our platform may charge additional fees for certain premium features which will be clearly displayed before you confirm any transaction."
 //     },
 //     {
 //       question: "Can I burn tokens after creating them?",

@@ -1,23 +1,5 @@
 
 
-//       {isSidebarOpen ? (
-//         <div
-//           className={` fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 md:hidden transition-transform duration-300 ease-in-out ${
-//             isSidebarOpen ? "translate-x-0" : "translate-x-full"
-//           }`}
-//         >
-//           <div className="flex items-center justify-between p-4 border-b border-gray-700">
-//             <h2 className="text-lg font-medium text-white">Menu</h2>
-
-//             <button
-//               className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-//               onClick={toggleSidebar}
-//               aria-label="Close menu"
-//             >
-//               <HiX className="h-6 w-6" />
-//             </button>
-//           </div>
-
 //           <nav className="flex flex-col w-full ">
 //             <div className=" px-4 py-2 rounded-md bg-gray-700 ">
 //               <p className="text-sm text-gray-300 hover:text-white">Balance</p>

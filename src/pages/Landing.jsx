@@ -380,30 +380,6 @@
 //                 )}
 //               </button>
 
-//               <div
-//                 className={`transition-all duration-300 overflow-hidden bg-indigo-50 ${
-//                   activeFaq === index ? 'max-h-96 p-6' : 'max-h-0 p-0'
-//                 }`}
-//               >
-//                 <p className="text-gray-600">{faq.answer}</p>
-
-
-//         <div className="px-8 py-12 md:py-16 md:px-12 text-center">
-//           <h2 className="text-3xl font-bold text-white mb-4">Ready to build on Solana?</h2>
-//           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-//             Start creating and managing your tokens today with our intuitive platform.
-//           </p>
-//           <Link to="/create-token">
-
-//             <Button className="hover:cursor-pointer bg-white text-gray-900 hover:bg-gray-100 transition px-8 py-3 rounded-lg shadow-lg">
-
-//                Create Your First Token
-
-//             </Button>
-//           </Link>
-//         </div>
-//       </div>
-
 //     </div>
 //   );
 // };

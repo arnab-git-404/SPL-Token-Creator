@@ -62,48 +62,6 @@
 //     if (isSidebarOpen) {
 //       document.body.style.overflow = "hidden";
 //     } else {
-//       document.body.style.overflow = "auto";
-//     }
-
-//     return () => {
-//       document.body.style.overflow = "auto";
-//     };
-//   }, [isSidebarOpen]);
-
-//   const formatAddress = (address) => {
-//     return `${address.toString().slice(0, 4)}...${address
-//       .toString()
-//       .slice(-4)}`;
-//   };
-
-//   return (
-//     <header className="border-b border-gray-700 bg-gray-900/50 backdrop-blur-sm relative z-30">
-//       <div className="container mx-auto px-4 py-4">
-//         <div className="flex items-center justify-between">
-//           <div className="flex items-center space-x-8 text-white">
-//             <Link to="/" className="text-2xl font-bold text-purple-500">
-//               Solana Token Creator
-//             </Link>
-
-//             {connected && (
-//               <nav className="hidden md:flex space-x-4">
-//                 {navLinks.map((link) => (
-//                   <Link
-//                     key={link.path}
-//                     to={link.path}
-//                     className="text-gray-300 hover:text-white relative group"
-//                   >
-//                     <span>{link.label}</span>
-//                     <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gray-300 group-hover:bg-indigo-500 group-hover:w-full group-hover:left-0 transition-all duration-300 transform -translate-x-1/2 group-hover:translate-x-0"></span>
-//                   </Link>
-//                 ))}
-//               </nav>
-//             )}
-//           </div>
-
-//           <div className="flex items-center space-x-4">
-
-//             {connected && !isSidebarOpen ?  <WalletInfo/> : '' }
 
 //           </div>
 

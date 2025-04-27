@@ -1,19 +1,5 @@
 
 
-//         </div>
-//       </div>
-
-//       {/* Overlay that covers the screen when sidebar is open */}
-//       {/* {isSidebarOpen && (
-//         <div
-//           className="fixed inset-0 bg-black/60 z-40 md:hidden"
-//           onClick={handleOutsideClick}
-//           aria-hidden="true"
-//         ></div>
-//       )} */}
-
-//       {/* Mobile sidebar */}
-
 //       {isSidebarOpen ? (
 //         <div
 //           className={` fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 md:hidden transition-transform duration-300 ease-in-out ${

@@ -1,21 +1,4 @@
 
-//       {/* Recent Activity Section */}
-//       {connected && recentActivity.length > 0 && (
-//         <div className="mb-12">
-//           <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-//             <FiClock className="mr-2 text-indigo-600" /> Recent Activity
-//           </h2>
-//           <Card>
-//             <div className="overflow-x-auto">
-//               <table className="min-w-full divide-y divide-gray-200">
-//                 <thead className="bg-gray-50">
-//                   <tr>
-//                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
-//                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Token</th>
-//                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
-//                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
-//                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-//                   </tr>
 //                 </thead>
 //                 <tbody className="bg-white divide-y divide-gray-200">
 //                   {recentActivity.map((activity, index) => (

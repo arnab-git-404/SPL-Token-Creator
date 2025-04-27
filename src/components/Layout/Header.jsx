@@ -1,31 +1,4 @@
 
-//   const toggleSidebar = () => {
-//     setIsSidebarOpen(!isSidebarOpen);
-//   };
-
-//   // Close sidebar when clicking outside
-//   const handleOutsideClick = () => {
-//     setIsSidebarOpen(false);
-//   };
-
-//   // Prevent body scrolling when sidebar is open
-//   useEffect(() => {
-//     if (isSidebarOpen) {
-//       document.body.style.overflow = "hidden";
-//     } else {
-
-//           </div>
-
-//           {/* Hamburger menu icon - only visible on mobile when connected */}
-//           {connected && (
-//             <button
-//               className="md:hidden p-2 rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-//               onClick={toggleSidebar}
-//               aria-label="Open mobile menu"
-//             >
-//               <HiMenu className="h-6 w-6" />
-//             </button>
-//           )}
 
 //         </div>
 //       </div>

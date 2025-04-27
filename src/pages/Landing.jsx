@@ -165,24 +165,12 @@ const LandingPage = () => {
       {/* <div
         className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl shadow-xl 
       overflow-hidden mb-12"
-      >
-        <div className="px-8 py-16 sm:p-16 xl:p-20 text-center sm:text-left">
-          <div className="max-w-2xl mx-auto sm:mx-0">
-            <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl tracking-tight">
-              Welcome to Solana Token Manager
-            </h1>
-            <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
+t-6 text-xl text-indigo-100 max-w-3xl">
               Create, manage, and transfer Solana tokens with our intuitive
               platform. Build your crypto ecosystem with ease.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              {connected ? (
-                <Link to="/create-token">
-                  <Button className="bg-white text-indigo-600 hover:bg-indigo-50 transition px-8 py-3 rounded-lg shadow-lg flex items-center justify-center w-full">
-                    <FiPlus className="mr-2" /> Create Token
-                  </Button>
-                </Link>
+
               ) : (
                 <WalletConnectButton className=" hover:cursor-pointer bg-white text-indigo-600 hover:bg-indigo-50 transition px-8 py-3 rounded-lg shadow-lg flex items-center justify-center w-full">
                   <IoWalletOutline className="mr-2" /> Connect Wallet

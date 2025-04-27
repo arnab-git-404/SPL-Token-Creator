@@ -1,13 +1,4 @@
 
-//                 <Button className="bg-white text-indigo-600 hover:bg-indigo-50 transition px-8 py-3 rounded-lg shadow-lg flex items-center justify-center w-full">
-//                   <FiPlus className="mr-2" /> Create Token
-//                 </Button>
-//               </Link>
-//               <Link to="/explore">
-//                 <Button className="bg-transparent text-white border border-white hover:bg-white hover:bg-opacity-10 transition px-8 py-3 rounded-lg flex items-center justify-center w-full">
-//                   <FiInfo className="mr-2" /> Learn More
-//                 </Button>
-//               </Link>
 //             </div>
 //           </div>
 //         </div>

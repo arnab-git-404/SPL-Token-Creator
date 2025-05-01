@@ -97,18 +97,7 @@
 //           <TokenSelector
 //             selectedToken={token}
 //             onTokenSelect={handleTokenChange}
-//           />
 
-//         </div>
-
-//         <div className="mb-6">
-//           <label className="block text-gray-700 text-sm font-bold mb-2">
-//             Amount to Burn *
-//           </label>
-//           <input
-
-//         >
-//           <FiTrash2 className="mr-2" /> Burn Tokens
 //         </Button>
 
 

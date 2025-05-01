@@ -20,16 +20,7 @@
 //   useEffect(() => {
 //     if (selectedToken) {
 //       setToken(selectedToken);
-//     }
-//   }, [selectedToken]);
 
-//   const handleTokenChange = (selectedToken) => {
-//     setToken(selectedToken);
-//     setError("");
-//   };
-
-//   const handleAmountChange = (e) => {
-//     const value = e.target.value;
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {
 //       setAmount(value);
 

@@ -14,16 +14,7 @@
 //     setIsLoading(true);
 //     notifyInfo("Burning tokens... Please approve the transaction in your wallet.");
 
-//     try {
-//       // This function would need to be implemented in your tokenService
-//       const result = await burnTokens({
-//         tokenAddress: token.address,
-//         amount: parseFloat(amount),
-//         decimals: token.decimals,
-//         wallet: publicKey
 
-//         signature: result.signature,
-//       });
 
 //           <label className="block text-gray-700 text-sm font-bold mb-2">
 //             Select Token *

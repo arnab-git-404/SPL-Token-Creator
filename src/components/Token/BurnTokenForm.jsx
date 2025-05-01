@@ -65,22 +65,13 @@
 //         amount: parseFloat(amount),
 //         decimals: token.decimals,
 //         wallet: publicKey
-//       });
 
-//       onSuccess({
-//         tokenName: token.name,
-//         tokenSymbol: token.symbol,
-//         amount: amount,
 //         signature: result.signature,
 //       });
 
 //     } catch (error) {
 //       console.error("Error burning tokens:", error);
-//       notifyError(error.message || "Failed to burn tokens. Please try again.");
-//     } finally {
-//       setIsLoading(false);
-//     }
-//   };
+
 
 //   return (
 //     <Card className="mb-6 transition-all hover:shadow-lg">

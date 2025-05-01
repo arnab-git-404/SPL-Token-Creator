@@ -8,8 +8,6 @@
 // import useNotification from "../../hooks/useNotification";
 // import TokenSelector from "./TokenSelector";
 
-// const BurnTokenForm = ({ onSuccess, selectedToken }) => {
-
 
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {
 //       setAmount(value);

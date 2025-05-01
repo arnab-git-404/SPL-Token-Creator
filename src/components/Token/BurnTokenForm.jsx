@@ -106,32 +106,7 @@
 //             Amount to Burn *
 //           </label>
 //           <input
-//             type="text"
-//             value={amount}
-//             onChange={handleAmountChange}
-//             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-indigo-500"
-//             placeholder="Enter amount to burn"
-//           />
-//           {token && (
-//             <p className="text-sm text-gray-500 mt-1">
-//               Token: {token.symbol} | Decimals: {token.decimals}
-//             </p>
-//           )}
-//         </div>
 
-//         {error && <div className="mb-4 text-red-500 text-sm">{error}</div>}
-
-//         <div className="bg-yellow-50 p-4 rounded-md mb-6 border border-yellow-200">
-//           <p className="text-gray-700 text-sm">
-//             <strong>Warning:</strong> Burning tokens permanently removes them from circulation.
-//             This action cannot be undone. Please verify the token and amount before proceeding.
-//           </p>
-//         </div>
-
-//         <Button
-//           type="submit"
-//           isLoading={isLoading}
-//           className="bg-red-600 hover:bg-red-700"
 //         >
 //           <FiTrash2 className="mr-2" /> Burn Tokens
 //         </Button>

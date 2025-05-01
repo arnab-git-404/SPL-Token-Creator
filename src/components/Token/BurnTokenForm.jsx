@@ -69,18 +69,6 @@
 //         signature: result.signature,
 //       });
 
-//     } catch (error) {
-//       console.error("Error burning tokens:", error);
-
-
-//   return (
-//     <Card className="mb-6 transition-all hover:shadow-lg">
-//       <h2 className="text-xl font-bold mb-6 text-indigo-700 flex items-center">
-//         <FiTrash2 className="mr-2" /> Burn Tokens
-//       </h2>
-
-//       <form onSubmit={handleSubmit}>
-//         <div className="mb-6">
 //           <label className="block text-gray-700 text-sm font-bold mb-2">
 //             Select Token *
 //           </label>

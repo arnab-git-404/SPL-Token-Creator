@@ -1,7 +1,3 @@
-// import React, { useState, useEffect } from "react";
-// import { useWallet } from "@solana/wallet-adapter-react";
-// import { toast } from "react-toastify";
-
 
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {
 //       setAmount(value);

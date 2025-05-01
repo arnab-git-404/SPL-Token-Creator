@@ -32,15 +32,7 @@
 //     const value = e.target.value;
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {
 //       setAmount(value);
-//       setError("");
-//     }
-//   };
 
-//   const validateForm = () => {
-//     if (!token) {
-//       setError("Please select a token to burn");
-//       return false;
-//     }
 
 //     if (!amount || parseFloat(amount) <= 0) {
 

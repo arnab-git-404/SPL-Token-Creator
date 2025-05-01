@@ -1,12 +1,6 @@
 // import React, { useState, useEffect } from "react";
 // import { useWallet } from "@solana/wallet-adapter-react";
 // import { toast } from "react-toastify";
-// import { FiTrash2 } from "react-icons/fi";
-// import Card from "../UI/Card";
-// import Button from "../UI/Button";
-// import { burnTokens } from "../../utils/solana";
-// import useNotification from "../../hooks/useNotification";
-// import TokenSelector from "./TokenSelector";
 
 
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {

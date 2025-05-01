@@ -43,12 +43,7 @@
 //     }
 
 //     if (!amount || parseFloat(amount) <= 0) {
-//       setError("Please enter a valid amount to burn");
-//       return false;
-//     }
 
-//     return true;
-//   };
 
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();

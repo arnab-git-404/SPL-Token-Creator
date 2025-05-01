@@ -110,12 +110,7 @@
 //         >
 //           <FiTrash2 className="mr-2" /> Burn Tokens
 //         </Button>
-//       </form>
-//     </Card>
-//   );
-// };
 
-// export default BurnTokenForm;
 
 import React, { useState, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";

@@ -9,17 +9,7 @@
 // import TokenSelector from "./TokenSelector";
 
 // const BurnTokenForm = ({ onSuccess, selectedToken }) => {
-//   const { publicKey } = useWallet();
-//   const { notifyError, notifyInfo } = useNotification();
 
-//   const [isLoading, setIsLoading] = useState(false);
-//   const [token, setToken] = useState(selectedToken || null);
-//   const [amount, setAmount] = useState("");
-//   const [error, setError] = useState("");
-
-//   useEffect(() => {
-//     if (selectedToken) {
-//       setToken(selectedToken);
 
 //     if (value === "" || (/^\d*\.?\d*$/.test(value) && !isNaN(parseFloat(value)))) {
 //       setAmount(value);
